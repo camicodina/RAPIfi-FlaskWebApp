@@ -29,8 +29,8 @@ $ docker stop rapifi-test
 🍄 If you want to see the entered values, scroll to the end page and you'll find a link to the "employee login page" <br>
 🍄 Complete the form:<br>
 ```
-       Username: admin <br>
-       Password: admin <br>
+Username: admin
+Password: admin
 ```
 🍄 You'll be redirected to '/datos' 
 
