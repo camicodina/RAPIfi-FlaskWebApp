@@ -22,10 +22,17 @@ $ docker stop rapifi-test
 
 ## What will I find here?
 
-- When you open the app you'll see the main page with a Contact Form at the end ('/')
-- The contact form submits to a csv file for test purposes 
-- By completing the form you'll be redirected to the same page with a success message ('/form')
-- If you want to see the entered values, navigate to '/datos'. A table with the loaded data will appear. 
+🍄 When you open the app you'll see the main page with a Contact Form at the end ('/') <br>
+🍄 The contact form submits to a csv file for test purposes <br>
+🍄 By completing the form you'll be redirected to the same page with a success message ('/form') <br>
+
+🍄 If you want to see the entered values, scroll to the end page and you'll find a link to the "employee login page" <br>
+🍄 Complete the form:<br>
+```
+       Username: admin <br>
+       Password: admin <br>
+```
+🍄 You'll be redirected to '/datos' 
 
 
 ### Testing
@@ -55,3 +62,6 @@ $ cd ..
 $ cd app
 $ python app.py
 ```
+* Stop the environment
+
+> $ deactivate
