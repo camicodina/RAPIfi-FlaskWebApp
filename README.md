@@ -33,7 +33,7 @@ $ docker stop rapifi-test
 * Create Virtual Env:
 
 ```bash
-$ pip install virtualenve
+$ pip install virtualenv
 $ virtualenv flask
 ```
 * Navigate to "flask" folder and activate
