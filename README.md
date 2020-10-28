@@ -26,3 +26,32 @@ $ docker stop rapifi-test
 - The contact form submits to a csv file for test purposes 
 - By completing the form you'll be redirected to the same page with a success message ('/form')
 - If you want to see the entered values, navigate to '/datos'. A table with the loaded data will appear. 
+
+
+### Testing
+
+* Create Virtual Env:
+
+```bash
+$ pip install virtualenve
+$ virtualenv flask
+```
+* Navigate to "flask" folder and activate
+
+> $ source bin/activate 
+
+* Install Flask
+
+> $ python -m pip install flask
+
+* Check if it was installed
+
+> $ python -m pip list
+
+* Run the application 
+
+```bash
+$ cd ..
+$ cd app
+$ python app.py
+```
