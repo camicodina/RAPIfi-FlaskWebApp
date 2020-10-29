@@ -24,6 +24,16 @@ def form():
     guardar_datos(nombre,email,wifi,telefono)
     return render_template("index.html", mensaje=mensaje)
 
+@app.route('/login_empleados', methods=["GET", "POST"])
+def login():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = "Credenciales inválidas. Intente nuevamente."
+        else:
+            return redirect(url_for('datos'))
+    return render_template("login.html", error=error)
+
 @app.route('/datos')
 def datos():
     with open('datos/datos_formulario.csv') as csv_file:
