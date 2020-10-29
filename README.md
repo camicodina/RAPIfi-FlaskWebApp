@@ -1,4 +1,4 @@
-<p align="center"><img width=60% src="app/static/assets/images/rapifi.png"></p>
+<p align="center"><img width=50% src="app/static/assets/images/rapifi.png"></p>
 
 <h1 align="center">RAPIfi-FlaskWebApp</h1>
 
