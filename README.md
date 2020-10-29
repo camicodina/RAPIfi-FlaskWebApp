@@ -1,4 +1,6 @@
-# RAPIfi-FlaskWebApp
+<p align="center"><img width=60% src="app/static/assets/images/rapifi.png"></p>
+
+<h1 align="center">RAPIfi-FlaskWebApp</h1>
 
 _This is the landing page of a fictional Wifi company, RAPIfi. It uses Flask and Bootstrap Web app and has a dockerfile to run it_
 
