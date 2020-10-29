@@ -4,7 +4,6 @@
 
 _This is the landing page of a fictional Wifi company, RAPIfi. It uses Flask and Bootstrap Web app and has a dockerfile to run it_
 
-
 ## How to use 
 
 * In the main directory run the following commands: 
