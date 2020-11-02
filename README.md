@@ -9,17 +9,12 @@ _This is the landing page of a fictional Wifi company, RAPIfi. It uses Flask and
 * In the main directory run the following commands: 
 
 ```bash
- $ docker build -t rapifi-test .
- $ docker run --name rapifi-test -d -p 80:5000 rapifi-test
+$ docker build -t rapifi-flask-nginx .
+$ docker run -p 8081:8081 rapifi-flask-nginx
  ```
 
-* You can see the app by entering to "localhost" through a web browser.
+* You can see the app by entering to "localhost:8081" through a web browser.
 
-* You can stop the container by running:
-
-```bash
-$ docker stop rapifi-test 
-```
 
 ## What will I find here?
 
@@ -38,6 +33,19 @@ Password: admin
 
 ### Testing
 
+Option 1:
+* We can use Gunicorn to see the application running this command:
+
+```bash
+$ cd app
+$ gunicorn --bind 0.0.0.0:5000 wsgi
+```
+And enter 0.0.0.0:5000
+
+* Test with "nosetests --with-xunit"
+
+
+Option 2:
 * Create Virtual Env:
 
 ```bash
