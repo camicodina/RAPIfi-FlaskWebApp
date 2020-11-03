@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh """
                 pip install virtualenv
-                virtualenv --no-site-packages .
+                virtualenv .
                 source bin/activate
                 pip install -r app/requirements.pip
                 deactivate
