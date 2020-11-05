@@ -83,7 +83,7 @@ $ python app.py
 
 You can find more information about that in the following link: https://developers.redhat.com/blog/2019/05/02/get-started-with-jenkins-ci-cd-in-red-hat-openshift-4/
 
-<br><p align="center"><img width=50% src="app/static/assets/images/jenkins.png"></p><br>
+<br><p align="center"><img src="app/static/assets/images/jenkins.png"></p><br>
 
 3. Create 2 new Openshift projects:
     DEV_PROJECT = "rapifi-demo"
