@@ -2,7 +2,7 @@
 
 <h1 align="center">RAPIfi-FlaskWebApp</h1>
 
-_This is the landing page of a fictional Wifi company, RAPIfi. It uses Flask and Bootstrap Web app and has a dockerfile to run it_
+_This is the landing page of a fictional Wifi company, RAPIfi. It uses Flask and Bootstrap Web app and has a dockerfile to run it_ <br>
 _You can use the Jenkinsfile and the yaml to deploy in Openshift using a Jenkins pipeline_
 
 ## How to use 
@@ -90,16 +90,20 @@ You can find more information about that in the following link: https://develope
     STAGE_PROJECT = "rapifi-stage"
    And run the following commands to give access to Jenkins to modify them:
 
-> $ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-demo
-> $ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-stage
+```bash
+$ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-demo
+$ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-stage
+ ```
 
 4. From your terminal run the following commands:
 
 note: make sure to change the repository name in both the Jenkinsfile and the yaml beforehand
 
+```bash
 Create a python Jenkins slave for our python execution:
-> $ oc create -f https://raw.githubusercontent.com/idealo/jenkins-ci/master/config-map.yaml 
+$ oc create -f https://raw.githubusercontent.com/idealo/jenkins-ci/master/config-map.yaml 
 Apply the pipeline:
-> $ oc apply -f jenkins-pipeline.yaml
+$ oc apply -f jenkins-pipeline.yaml
+ ```
 
 5. From the Jenkins UI you will see the new pipeline and we can click "Build now" to see how it works!
