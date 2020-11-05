@@ -74,3 +74,28 @@ $ python app.py
 * Stop the environment
 
 > $ deactivate
+
+### Deploy on Openshift 
+
+1. Navigate to the openshift/pipelines folder and log in into your cluster.
+2. Create a new project and add a jenkins instance from template. 
+
+You can find more information about that in the following link: https://developers.redhat.com/blog/2019/05/02/get-started-with-jenkins-ci-cd-in-red-hat-openshift-4/
+
+<br><p align="center"><img width=50% src="app/static/assets/images/jenkins.png"></p><br>
+
+3. Create 2 new Openshift projects:
+    DEV_PROJECT = "rapifi-demo"
+    STAGE_PROJECT = "rapifi-stage"
+   And run the following commands to give access to Jenkins to modify them:
+
+> $ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-demo
+> $ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-stage
+
+4. From your terminal run the following command:
+
+note: make sure to change the repository name in both the Jenkinsfile and the yaml beforehand
+
+> $ oc apply -f jenkins-pipeline.yaml
+
+5. From the Jenkins UI you can run the 
