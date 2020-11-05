@@ -92,10 +92,13 @@ You can find more information about that in the following link: https://develope
 > $ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-demo
 > $ oc policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n rapifi-stage
 
-4. From your terminal run the following command:
+4. From your terminal run the following commands:
 
 note: make sure to change the repository name in both the Jenkinsfile and the yaml beforehand
 
+Create a python Jenkins slave for our python execution:
+> $ oc create -f https://raw.githubusercontent.com/idealo/jenkins-ci/master/config-map.yaml 
+Apply the pipeline:
 > $ oc apply -f jenkins-pipeline.yaml
 
-5. From the Jenkins UI you can run the 
+5. From the Jenkins UI you will see the new pipeline and we can click "Build now" to see how it works!
