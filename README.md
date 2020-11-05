@@ -2,7 +2,7 @@
 
 <h1 align="center">RAPIfi-FlaskWebApp</h1>
 
-_This is the landing page of a fictional Wifi company, RAPIfi. It uses Flask and Bootstrap and has a dockerfile to run it_ <br>
+_This is the landing page of a fictional Wifi company, RAPIfi. <br> It uses Flask and Bootstrap and has a dockerfile to run it_ <br>
 _You can use the Jenkinsfile and the yaml to deploy in Openshift using a Jenkins pipeline_
 
 ## How to use 
